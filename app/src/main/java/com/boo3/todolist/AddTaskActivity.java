@@ -1,10 +1,10 @@
 package com.boo3.todolist;
 
+
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.Window;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -25,19 +25,20 @@ public class AddTaskActivity extends AppCompatActivity {
         findViewById(R.id.add_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    addTask(mEditText.getText().toString());
+                addTask(mEditText.getText().toString());
+                finish();
             }
         });
 
     }
 
-    public void addTask(String task){
+    public void addTask(String task) {
         if (task == null || task.length() == 0) {
             Toast
                     .makeText(this, "Пустую задачу нельзя добавить!", Toast.LENGTH_SHORT)
                     .show();
             return;
         }
-        DataHelper.addItemAsync(realm,task);
+        DataHelper.addItemAsync(realm, task);
     }
 }

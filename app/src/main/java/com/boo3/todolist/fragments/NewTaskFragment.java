@@ -25,7 +25,9 @@ public class NewTaskFragment extends CustomFragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        setUpRecycleView(new RealmRecycleListAdapter(realm.where(Task.class).equalTo("status", 0)
+        setUpRecycleView(new RealmRecycleListAdapter(realm.where(Task.class)
+                        .equalTo("status", 0)
+                        .sort("id")
                         .findAll())
                 , getView().findViewById(R.id.list_item));
 
