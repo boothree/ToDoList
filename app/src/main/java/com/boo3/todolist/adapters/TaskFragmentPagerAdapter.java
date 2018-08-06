@@ -1,4 +1,4 @@
-package com.boo3.todolist.fragments;
+package com.boo3.todolist.adapters;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
@@ -7,6 +7,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.boo3.todolist.R;
+import com.boo3.todolist.fragments.AllTaskFragment;
+import com.boo3.todolist.fragments.NewTaskFragment;
 
 public class TaskFragmentPagerAdapter extends FragmentPagerAdapter {
     private Context mContext;
