@@ -1,14 +1,23 @@
 <resources>
-<string name="app_name">Task manager</string>
-<string name="button_add_task">Add task</string>
-<string name="add_task">Add new task</string>
-<string name="delete">Delete group task</string>
-<string name="start_delete_mode">Delete task</string>
-<string name="cancel_delete">Cancel delete</string>
-<string name="mark_all_delete">Selection all task</string>
-<string name="all_task">All tasks</string>
-<string name="new_task_only">New tasks</string>
-<string name="rename_text">Rename task</string>
-<string name="rename_add_button">Rename</string>
+    <string name="app_name">Task manager</string>
+    <string name="button_add_task">Add task</string>
+    <string name="add_task">Add new task</string>
+    <string name="delete">Delete group task</string>
+    <string name="start_delete_mode">Delete task</string>
+    <string name="cancel_delete">Cancel delete</string>
+    <string name="mark_all_delete">Selection all task</string>
+    <string name="all_task">All tasks</string>
+    <string name="new_task_only">New tasks</string>
+    <string name="rename_text">Rename task</string>
+    <string name="rename_add_button">Rename</string>
+    <string name="facebook_application_id" translatable="false">APP_ID</string>
+    <!-- Facebook Application ID, prefixed by 'fb'. Enables Chrome Custom tabs. -->
+    <string name="facebook_login_protocol_scheme" translatable="false">fbAPP_ID</string>
+    <string name="general_logo">general logo</string>
+    <string name="name_gmail">name_gmail</string>
+    <string name="gmail">gmail</string>
+    <string name="loading">loading</string>¬
 
 </resources>
+
+
