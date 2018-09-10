@@ -3,6 +3,7 @@ package com.boo3.todolist;
 import android.app.Application;
 
 import com.boo3.todolist.model.Parent;
+import com.boo3.todolist.model.UserFirebase;
 
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
@@ -12,6 +13,10 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        //singltone
+        UserFirebase.getInstance();
+
         Realm.init(this);
         RealmConfiguration realmConfig = new RealmConfiguration.Builder()
                 .initialData(new Realm.Transaction() {

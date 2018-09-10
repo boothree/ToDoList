@@ -1,4 +1,4 @@
-package com.boo3.todolist;
+package com.boo3.todolist.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,10 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.boo3.todolist.AddTaskActivity;
+import com.boo3.todolist.R;
 import com.boo3.todolist.adapters.TaskFragmentPagerAdapter;
+
 
 public class MainActivity extends AppCompatActivity {
     private FloatingActionButton fab;
@@ -18,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //ActivityLoginTestBinding binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
+        //binding.setUser(UserFirebase.getInstance());
+
+        //mDrawerLayout = findViewById(R.id.drawer_layout);
+
 
         // Find the view pager that will allow the user to swipe between fragments
         ViewPager viewPager = findViewById(R.id.view_pager);

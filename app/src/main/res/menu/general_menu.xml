@@ -6,7 +6,7 @@
             android:id="@+id/action_start_delete_mode"
             android:icon="@android:drawable/ic_menu_edit"
             android:title="@string/start_delete_mode"
-            app:showAsAction="always" />
+            app:showAsAction="ifRoom" />
     </group>
 
     <group android:id="@+id/delete_mode">
@@ -14,16 +14,25 @@
             android:id="@+id/action_mark_all_delete"
             android:icon="@android:drawable/checkbox_on_background"
             android:title="@string/mark_all_delete"
-            app:showAsAction="always" />
+            app:showAsAction="ifRoom" />
         <item
             android:id="@+id/action_end_delete_mode"
             android:icon="@android:drawable/ic_menu_delete"
             android:title="@string/delete"
-            app:showAsAction="always" />
+            app:showAsAction="ifRoom" />
         <item
             android:id="@+id/action_cancel_delete_mode"
             android:icon="@android:drawable/ic_menu_close_clear_cancel"
             android:title="@string/cancel_delete"
-            app:showAsAction="always" />
+            app:showAsAction="ifRoom" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/user_account"
+            android:icon="@android:drawable/sym_def_app_icon"
+            android:title="@string/account_info"
+            app:showAsAction="ifRoom" />
+
     </group>
 </menu>

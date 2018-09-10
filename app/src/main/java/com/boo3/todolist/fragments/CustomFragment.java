@@ -5,12 +5,10 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -26,6 +24,7 @@ import com.boo3.todolist.adapters.ClickListener;
 import com.boo3.todolist.model.DataHelper;
 import com.boo3.todolist.adapters.RealmRecycleListAdapter;
 import com.boo3.todolist.adapters.TouchHelperCallback;
+import com.boo3.todolist.ui.UserAccountActivity;
 
 import io.realm.Realm;
 
@@ -52,7 +51,7 @@ public class CustomFragment extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         this.menu = menu;
-        inflater.inflate(R.menu.delete_items, menu);
+        inflater.inflate(R.menu.general_menu, menu);
         menu.setGroupVisible(R.id.start_delete_mode, true);
         menu.setGroupVisible(R.id.delete_mode, false);
     }
@@ -77,7 +76,10 @@ public class CustomFragment extends Fragment {
                 return true;
             case R.id.action_mark_all_delete:
                 mAdapter.enableDeletionMode(true);
-                mAdapter.setMarkAll(mAdapter.isMarkAll() ? false : true);
+                mAdapter.setMarkAll(!mAdapter.isMarkAll());
+            case R.id.user_account:
+                Intent intent = new Intent(getActivity(), UserAccountActivity.class);
+                startActivity(intent);
             default:
                 return super.onOptionsItemSelected(item);
         }

@@ -14,9 +14,16 @@
     <!-- Facebook Application ID, prefixed by 'fb'. Enables Chrome Custom tabs. -->
     <string name="facebook_login_protocol_scheme" translatable="false">fbAPP_ID</string>
     <string name="general_logo">general logo</string>
-    <string name="name_gmail">name_gmail</string>
-    <string name="gmail">gmail</string>
-    <string name="loading">loading</string>¬
+
+    <string name="name_user">name User</string>
+    <string name="email">email</string>
+    <string name="loading">loading</string>
+    <string name="out_account">Out account</string>
+    <string name="photoUser">photoUser</string>
+
+    <string name="account_info">account_info</string>
+    <string name="title_activity_user_account">UserAccountActivity</string>
+    <string name="imageUser">User image</string>¬
 
 </resources>
 
