@@ -41,9 +41,11 @@ public class UserFirebase extends BaseObservable {
         return firebaseUser.getEmail();
     }
 
+    
     @Bindable
     @Nullable
-    public String getImageUrl(){ return firebaseUser.getPhotoUrl().toString();}
+    public String getImageUrl(){
+        return firebaseUser.getPhotoUrl().toString().replace("/s96-c/","/s500-c/");}
 
     @BindingAdapter({"app:url"})
     public static void loadImage(ImageView view, String url) {
