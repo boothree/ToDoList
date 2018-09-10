@@ -4,11 +4,9 @@ package com.boo3.todolist.ui;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 
-import android.support.v4.app.NavUtils;
-import android.support.v7.app.ActionBar;
+
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
+
 
 import com.boo3.todolist.R;
 import com.boo3.todolist.databinding.UserAccount;
